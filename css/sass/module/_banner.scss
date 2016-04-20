@@ -1,0 +1,56 @@
+
+// ******************************************************************
+// MIXIN
+
+@mixin bannermixin($height, $background, $position, $textcolor) {
+	height:$height;
+	background:$background; 
+	background-repeat: no-repeat ;
+	background-position: $position;
+	background-size: cover;
+	color:$textcolor;
+}
+
+
+
+// ******************************************************************
+// BLOCK STRUCTURE
+
+%banner {
+
+	width:100%;
+	display:table;
+	text-align:center;
+	 
+	section {
+		display:table-cell;
+		vertical-align:middle;
+	}
+
+	&__h1 {
+		font-size:$h1;
+		text-transform: uppercase;		
+	}
+
+	&__p {
+		padding:5px 0;
+		letter-spacing:1px;
+	}
+	
+	
+}
+
+// ******************************************************************
+// BLOCK MODIFIERS 
+
+.banner--bgcolor {
+	@extend %banner;
+	@include bannermixin(400px, $banner-color, top right, $banner-textcolor);
+}
+
+.banner--bgimage {
+	@extend %banner;
+	@include bannermixin(200px, url("../img/banner.jpg"), top center, white);
+}
+
+

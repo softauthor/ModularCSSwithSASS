@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900);
+* {
+  box-sizing: border-box; }
+
+body, html, h1, h2, p, a, span, button, input, label {
+  margin: 0;
+  padding: 0;
+  font-family: Lato; }
+
+.btn-bgfill, .btn-bgstroke:hover, .btn-bgstroke, .btn-bgfill:hover {
+  -webkit-appearance: none;
+  font-size: 20px;
+  display: inline-block;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  height: 45px;
+  line-height: 39px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 700; }
+
+.btn-bgfill, .btn-bgstroke:hover {
+  background-color: white;
+  color: #33cccc;
+  border: 2px solid white; }
+
+.btn-bgstroke, .btn-bgfill:hover {
+  background-color: #33cccc;
+  color: white;
+  border: 2px solid white; }
+
+.banner--bgcolor, .banner--bgimage {
+  width: 100%;
+  display: table;
+  text-align: center; }
+  .banner--bgcolor section, .banner--bgimage section {
+    display: table-cell;
+    vertical-align: middle; }
+.banner--bgcolor {
+  height: 400px;
+  background: #33cccc;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  color: white; }
+
+.banner--bgimage {
+  height: 200px;
+  background: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  color: white; }
+
+/*# sourceMappingURL=style.css.map */
